@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyProjectManager</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+<main class="page">
+    <header>
+        <svg height="100" width="300">
+            <ellipse cx="150" cy="50" rx="150" ry="50" style="fill:white;" />
+            <text x="30" y="55" fill="black" font-weight="bold" font-size="24">Project Time Manager</text>
+        </svg>
+    </header>
+    <section>
+
+        <div class="inputForm">
+            <input type="text" class = "inputProject" id="inputProject" placeholder="Add a new project" autofocus>
+            <button class="btn btn-success" id="addProject">Add</button>
+        </div>
+
+        <div id="projects">
+
+        </div>
+    </section>
+    <footer>
+        &copy; Dmytro Lylo - semestrální práce KAJ
+    </footer>
+</main>
+<dialog class="myModal" id="dialog">
+    <div class="card">
+        <div class="card-header" id="modalHeaderName"></div>
+        <div class="card-header" id="modalInput">
+            <div id="inputPart">
+                <input type="text" placeholder="Add an event" id="inputEvent">
+            </div>
+            <span id="timer"></span>
+        </div>
+
+        <div class="card-body" id="events">
+
+        </div>
+        <div class="card-footer">
+            <button onclick="closeModal()" class="btn btn-danger">close</button>
+        </div>
+    </div>
+</dialog>
+<script src="main.js"></script>
+</body>
+</html>

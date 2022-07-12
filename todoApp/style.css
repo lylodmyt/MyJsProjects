@@ -1,0 +1,110 @@
+. {
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: lightgray;
+}
+
+.header{
+    background: #b628dd;
+    color: white;
+    width: 450px;
+    font-size: 36px;
+    text-align: center;
+}
+
+.input{
+    display: flex;
+    align-items: center;
+    width: 450px;
+    padding: 10px 0 10px 0;
+}
+
+input[type=text]{
+    margin: 10px;
+    border: 3px solid grey;
+    width: 350px;
+    font-size: 24px;
+    outline: none;
+}
+
+input[type=text]:focus{
+    border: 3px solid #555;
+}
+
+.add{
+    height: 36px;
+    border: none;
+    background: #6fdd39;
+    color: white;
+    font-size: 24px;
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.add:hover{
+    background: #63bc38;
+}
+
+.todo{
+    display: flex;
+    align-items: center;
+    background: lightgray;
+    margin: 10px 0 10px 0;
+    width: 450px;
+}
+
+.task{
+    flex-grow: 4;
+    font-size: 24px;
+    margin: 10px;
+}
+
+input[type=checkbox]{
+    height: 36px;
+    width: 36px;
+}
+
+
+.delete{
+    height: 36px;
+    margin: 10px;
+    border: none;
+    background: #dd1515;
+    color: white;
+    font-size: 24px;
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.delete:hover{
+    background: #b01616;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+}
+
+.reg{
+    font-weight: 600;
+    text-decoration-line: underline;
+}
+
+.reg:hover{
+    color: #b628dd;
+    cursor: pointer;
+}
